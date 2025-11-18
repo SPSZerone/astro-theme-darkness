@@ -1,5 +1,5 @@
 ---
-// ナビゲーションコンポーネント
+// Navigation component
 const currentPath = Astro.url.pathname;
 ---
 
@@ -9,7 +9,7 @@ const currentPath = Astro.url.pathname;
 
     <div class="nav-links">
       <a href="/" class:list={['nav-link', { active: currentPath === '/' }]}>
-        ホーム
+        Home
       </a>
       <a href="/about" class:list={['nav-link', { active: currentPath === '/about' }]}>
         About
@@ -136,7 +136,7 @@ const currentPath = Astro.url.pathname;
 </style>
 
 <script>
-  // テーマトグルのアニメーション
+  // Theme toggle animation
   const themeToggle = document.querySelector('.theme-toggle');
 
   if (themeToggle) {
@@ -146,7 +146,7 @@ const currentPath = Astro.url.pathname;
         icon.textContent = icon.textContent === '✨' ? '🌙' : '✨';
       }
 
-      // パーティクルエフェクト
+      // Particle burst effect
       for (let i = 0; i < 10; i++) {
         const particle = document.createElement('div');
         particle.style.position = 'fixed';

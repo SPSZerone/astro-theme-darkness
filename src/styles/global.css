@@ -1,4 +1,4 @@
-/* 闇っぽいダークテーマのグローバルスタイル */
+/* Global styles for dark abyss theme */
 :root {
   --color-bg-dark: #0a0a0f;
   --color-bg-darker: #050508;
@@ -30,7 +30,7 @@ body {
   overflow-x: hidden;
 }
 
-/* 背景のアニメーショングラデーション */
+/* Animated background gradient */
 body::before {
   content: '';
   position: fixed;
@@ -58,7 +58,7 @@ body::before {
   }
 }
 
-/* スクロールバーのカスタマイズ */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -76,7 +76,7 @@ body::before {
   background: linear-gradient(180deg, var(--color-accent-pink), var(--color-accent-blue));
 }
 
-/* グローバルアニメーション */
+/* Global animations */
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);

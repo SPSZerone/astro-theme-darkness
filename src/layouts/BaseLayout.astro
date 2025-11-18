@@ -8,13 +8,13 @@ interface Props {
 }
 
 const {
-  title = 'Darkness - 闇のテーマ',
-  description = '動きの激しいダークテーマのAstroサイト'
+  title = 'Darkness - Dark Theme',
+  description = 'An intense motion-filled dark theme Astro site'
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -47,7 +47,7 @@ const {
         z-index: 1;
       }
 
-      /* カスタムカーソル */
+      /* Custom cursor */
       .cursor-follower {
         width: 20px;
         height: 20px;
@@ -75,7 +75,7 @@ const {
     </style>
 
     <script>
-      // カスタムカーソル
+      // Custom cursor
       const cursor = document.querySelector('.cursor-follower') as HTMLElement;
 
       document.addEventListener('mousemove', (e) => {
@@ -83,7 +83,7 @@ const {
         cursor.style.top = e.clientY + 'px';
       });
 
-      // ホバー時のカーソル拡大
+      // Cursor expand on hover
       const interactiveElements = document.querySelectorAll('a, button, .card');
       interactiveElements.forEach(el => {
         el.addEventListener('mouseenter', () => {

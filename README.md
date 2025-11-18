@@ -1,54 +1,54 @@
-# 🌌 Darkness - 闇のAstroテーマ
+# 🌌 Darkness - Astro Dark Theme
 
-Astroの公式テンプレートをベースに、**闇**をテーマとした魔改造を施したダークテーマです。Three.js、リッチなCSSアニメーション、そしてAstroの最新機能を駆使して、動きのある圧倒的な体験を提供します。
+A heavily modified dark theme based on Astro's official blog template, themed around **darkness**. This experimental project uses Three.js, rich CSS animations, and Astro's latest features to deliver an overwhelming motion-filled experience.
 
 ![Darkness Theme](https://img.shields.io/badge/Astro-4.0-purple)
 ![Three.js](https://img.shields.io/badge/Three.js-0.160-blue)
 
-## ✨ 特徴
+## ✨ Features
 
-### 🎨 デザイン
-- **ダークテーマ**: 闇をベースにした美しいカラーパレット（紫、ピンク、青）
-- **グラデーション**: 動的に変化する背景グラデーション
-- **カスタムカーソル**: マウスに追従する独自のカーソルデザイン
+### 🎨 Design
+- **Dark Theme**: Beautiful color palette based on darkness (purple, pink, blue)
+- **Gradients**: Dynamically shifting background gradients
+- **Custom Cursor**: Unique cursor design that follows the mouse
 
-### 🌌 Three.js エフェクト
-- **5000個のパーティクル**: 3D空間で輝く粒子システム
-- **回転するトーラス**: 複数のワイヤーフレームトーラスが織りなす幾何学模様
-- **マウス追従カメラ**: カーソルの動きに反応する3Dカメラ
+### 🌌 Three.js Effects
+- **5000 Particles**: A glowing particle system in 3D space
+- **Rotating Torus**: Geometric patterns created by multiple wireframe torus shapes
+- **Mouse-Following Camera**: 3D camera that responds to cursor movement
 
-### 🎭 アニメーション
-- **グリッチエフェクト**: サイバーパンクなテキストアニメーション
-- **浮遊アニメーション**: すべての要素が柔らかく浮遊
-- **ホバーエフェクト**: インタラクティブな要素に豊富なホバーアニメーション
-- **View Transitions**: ページ遷移時のスムーズなアニメーション
-- **パーティクルバースト**: ボタンクリック時のパーティクルエフェクト
+### 🎭 Animations
+- **Glitch Effects**: Cyberpunk text animations
+- **Float Animations**: All elements float softly
+- **Hover Effects**: Rich hover animations on interactive elements
+- **View Transitions**: Smooth animations during page transitions
+- **Particle Burst**: Particle effects on button clicks
 
-### ⚡ パフォーマンス
-- **Astro**: 静的サイト生成による高速パフォーマンス
-- **最適化**: 軽量で効率的なアニメーション実装
+### ⚡ Performance
+- **Astro**: Fast performance through static site generation
+- **Optimized**: Lightweight and efficient animation implementation
 
-## 🚀 使い方
+## 🚀 Usage
 
-### インストール
+### Installation
 
 ```bash
-# 依存関係のインストール
+# Install dependencies
 npm install
 
-# 開発サーバーの起動
+# Start development server
 npm run dev
 
-# ビルド
+# Build
 npm run build
 
-# プレビュー
+# Preview
 npm run preview
 ```
 
-### カスタマイズ
+### Customization
 
-`src/styles/global.css`のCSS変数を変更することで、簡単にテーマをカスタマイズできます：
+You can easily customize the theme by changing CSS variables in `src/styles/global.css`:
 
 ```css
 :root {
@@ -63,65 +63,65 @@ npm run preview
 }
 ```
 
-## 📁 プロジェクト構造
+## 📁 Project Structure
 
 ```
 /
-├── public/              # 静的ファイル
+├── public/              # Static files
 ├── src/
-│   ├── components/      # 再利用可能なコンポーネント
-│   │   ├── ThreeBackground.astro   # Three.js背景
-│   │   ├── Hero.astro              # ヒーローセクション
-│   │   ├── Card.astro              # カードコンポーネント
-│   │   ├── Features.astro          # 特徴セクション
-│   │   └── Navigation.astro        # ナビゲーション
-│   ├── layouts/         # レイアウト
+│   ├── components/      # Reusable components
+│   │   ├── ThreeBackground.astro   # Three.js background
+│   │   ├── Hero.astro              # Hero section
+│   │   ├── Card.astro              # Card component
+│   │   ├── Features.astro          # Features section
+│   │   └── Navigation.astro        # Navigation bar
+│   ├── layouts/         # Layouts
 │   │   └── BaseLayout.astro
-│   ├── pages/           # ページ
+│   ├── pages/           # Pages
 │   │   ├── index.astro
 │   │   └── about.astro
-│   └── styles/          # グローバルスタイル
+│   └── styles/          # Global styles
 │       └── global.css
-├── astro.config.mjs     # Astro設定
+├── astro.config.mjs     # Astro configuration
 ├── package.json
 └── tsconfig.json
 ```
 
-## 🛠️ 技術スタック
+## 🛠️ Tech Stack
 
-- **[Astro](https://astro.build/)** - 静的サイトジェネレーター
-- **[Three.js](https://threejs.org/)** - 3Dグラフィックスライブラリ
-- **CSS Animations** - リッチなアニメーション
-- **View Transitions API** - スムーズなページ遷移
-- **TypeScript** - 型安全な開発
+- **[Astro](https://astro.build/)** - Static site generator
+- **[Three.js](https://threejs.org/)** - 3D graphics library
+- **CSS Animations** - Rich animations
+- **View Transitions API** - Smooth page transitions
+- **TypeScript** - Type-safe development
 
-## 🎯 実装されているエフェクト
+## 🎯 Implemented Effects
 
-1. **パーティクルシステム**: Three.jsによる5000個の3Dパーティクル
-2. **グリッチアニメーション**: テキストのサイバーパンクエフェクト
-3. **浮遊アニメーション**: CSS keyframesによる柔らかい動き
-4. **グロウエフェクト**: カードやボタンの光るエフェクト
-5. **カスタムカーソル**: マウス追従とホバー時の拡大
-6. **動的グラデーション**: 回転・移動する背景グラデーション
-7. **View Transitions**: ページ間のスムーズなアニメーション
-8. **パーティクルバースト**: クリック時のパーティクル放出
+1. **Particle System**: 5000 3D particles using Three.js
+2. **Glitch Animation**: Cyberpunk text effects
+3. **Float Animation**: Soft motion using CSS keyframes
+4. **Glow Effects**: Glowing effects on cards and buttons
+5. **Custom Cursor**: Mouse tracking and hover expansion
+6. **Dynamic Gradients**: Rotating and moving background gradients
+7. **View Transitions**: Smooth animations between pages
+8. **Particle Burst**: Particle emission on click
 
-## 🌟 今後の拡張案
+## 🌟 Future Extensions
 
-- [ ] スクロールトリガーアニメーション
-- [ ] WebGL シェーダーエフェクト
-- [ ] 音楽ビジュアライザー
-- [ ] パララックススクロール
-- [ ] インタラクティブな3Dオブジェクト
+- [ ] Scroll trigger animations
+- [ ] WebGL shader effects
+- [ ] Music visualizer
+- [ ] Parallax scrolling
+- [ ] Interactive 3D objects
 
-## 📝 ライセンス
+## 📝 License
 
 MIT
 
-## 🤝 コントリビューション
+## 🤝 Contributing
 
-プルリクエスト大歓迎です！バグ報告や機能提案もお待ちしています。
+Pull requests are welcome! Bug reports and feature requests are also appreciated.
 
 ---
 
-**Darkness** - 闇の中で輝くWebの可能性を探求する実験的プロジェクト
+**Darkness** - An experimental project exploring the possibilities of the web shining through the abyss
