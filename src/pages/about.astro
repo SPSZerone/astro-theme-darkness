@@ -1,0 +1,224 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ThreeBackground from '../components/ThreeBackground.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<BaseLayout title="About - Darkness" description="Darknessテーマについて">
+  <ThreeBackground />
+  <Navigation />
+
+  <main class="about-page">
+    <div class="container">
+      <h1 class="page-title shimmer-text">About Darkness</h1>
+
+      <div class="content-grid">
+        <section class="content-section">
+          <h2>このテーマについて</h2>
+          <p>
+            Darknessは、Astroの公式テンプレートをベースに、闇をテーマとした
+            魔改造を施したダークテーマです。Three.js、CSS アニメーション、
+            そしてAstroの最新機能を駆使して、動きのあるリッチな体験を提供します。
+          </p>
+        </section>
+
+        <section class="content-section">
+          <h2>使用技術</h2>
+          <ul class="tech-list">
+            <li>⚡ Astro 4.0</li>
+            <li>🌌 Three.js (3Dグラフィックス)</li>
+            <li>🎨 CSS アニメーション & トランスフォーム</li>
+            <li>✨ View Transitions API</li>
+            <li>🎭 カスタムカーソル</li>
+            <li>🌈 グラデーション & ブレンドモード</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>特徴的なエフェクト</h2>
+          <div class="effects-grid">
+            <div class="effect-card">
+              <h3>パーティクルシステム</h3>
+              <p>5000個の光る粒子が3D空間で踊ります</p>
+            </div>
+            <div class="effect-card">
+              <h3>グリッチアニメーション</h3>
+              <p>サイバーパンクな未来的テキストエフェクト</p>
+            </div>
+            <div class="effect-card">
+              <h3>マウス追従</h3>
+              <p>カーソルの動きに反応する3Dカメラ</p>
+            </div>
+            <div class="effect-card">
+              <h3>浮遊アニメーション</h3>
+              <p>全ての要素が柔らかく浮遊します</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section cta-section">
+          <h2>始めましょう</h2>
+          <p>このテーマはカスタマイズ可能です。CSS変数を変更するだけで、
+             あなた独自の闇を創造できます。</p>
+          <a href="/" class="btn btn-primary">ホームに戻る</a>
+        </section>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .about-page {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .page-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeInDown 1s ease-out;
+  }
+
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .content-section {
+    background: var(--color-bg-card);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    animation: fadeInUp 1s ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  .content-section:nth-child(1) { animation-delay: 0.1s; }
+  .content-section:nth-child(2) { animation-delay: 0.2s; }
+  .content-section:nth-child(3) { animation-delay: 0.3s; }
+  .content-section:nth-child(4) { animation-delay: 0.4s; }
+
+  .content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-pink));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .content-section p {
+    line-height: 1.8;
+    color: var(--color-text-dim);
+  }
+
+  .tech-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .tech-list li {
+    padding: 1rem;
+    background: rgba(168, 85, 247, 0.1);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+  .tech-list li:hover {
+    background: rgba(168, 85, 247, 0.2);
+    transform: translateX(10px);
+  }
+
+  .effects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .effect-card {
+    padding: 1.5rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .effect-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+  }
+
+  .effect-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent-blue);
+  }
+
+  .effect-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+  }
+
+  .cta-section {
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-pink));
+    color: white;
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(168, 85, 247, 0.6);
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

@@ -1,0 +1,87 @@
+---
+import Card from './Card.astro';
+---
+
+<section class="features">
+  <div class="container">
+    <h2 class="section-title shimmer-text">特徴</h2>
+    <p class="section-subtitle">闇の中で輝く、最先端の機能</p>
+
+    <div class="features-grid">
+      <Card
+        icon="🌌"
+        title="Three.js パーティクル"
+        description="5000個のパーティクルが織りなす美しい3D空間。マウスの動きに反応する没入感のある背景。"
+      />
+      <Card
+        icon="✨"
+        title="グリッチエフェクト"
+        description="未来的なグリッチアニメーションでテキストが踊る。ダークサイドの美学。"
+      />
+      <Card
+        icon="🎨"
+        title="リッチなアニメーション"
+        description="CSSアニメーション、トランスフォーム、ブレンドモードを駆使した動きのある体験。"
+      />
+      <Card
+        icon="🌈"
+        title="グラデーション"
+        description="紫、ピンク、青の3色が織りなす魅惑的なカラーパレット。"
+      />
+      <Card
+        icon="⚡"
+        title="高速パフォーマンス"
+        description="Astroの静的サイト生成により、美しさと速度を両立。"
+      />
+      <Card
+        icon="🎭"
+        title="カスタマイズ可能"
+        description="CSS変数で簡単にカラーテーマをカスタマイズ。自分だけの闇を創造。"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .features {
+    padding: 5rem 2rem;
+    position: relative;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: var(--color-text-dim);
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ThreeBackground from '../components/ThreeBackground.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+---
+
+<BaseLayout title="Darkness - 闇のテーマ">
+  <ThreeBackground />
+  <Navigation />
+  <Hero />
+  <Features />
+
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta-title shimmer-text">闇の世界へようこそ</h2>
+      <p class="cta-text">このテーマは、動きと美しさを極限まで追求した実験的なプロジェクトです。</p>
+      <button class="btn btn-primary">さらに探索する</button>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .cta {
+    padding: 8rem 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-text {
+    font-size: 1.2rem;
+    color: var(--color-text-dim);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-pink));
+    color: white;
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(168, 85, 247, 0.6);
+  }
+</style>
