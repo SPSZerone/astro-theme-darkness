@@ -1,7 +1,7 @@
 ---
 title: 'Building Particle Systems with Three.js'
 description: 'A deep dive into creating beautiful particle effects for web backgrounds'
-pubDate: 2024-01-20
+pubDate: 2025-12-20
 tags: ['three.js', 'webgl', 'particles', 'tutorial']
 ---
 

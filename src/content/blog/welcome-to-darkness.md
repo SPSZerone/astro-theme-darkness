@@ -1,7 +1,7 @@
 ---
 title: 'Welcome to the Darkness'
 description: 'Exploring the depths of dark-themed web design with Three.js and modern animations'
-pubDate: 2024-01-15
+pubDate: 2025-12-15
 tags: ['astro', 'three.js', 'dark-theme', 'animations']
 ---
 

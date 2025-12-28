@@ -1,7 +1,7 @@
 ---
 title: 'Mastering CSS Animations in Dark Themes'
 description: 'Advanced CSS animation techniques for creating motion-rich dark interfaces'
-pubDate: 2024-01-25
+pubDate: 2025-12-25
 tags: ['css', 'animations', 'design', 'dark-theme']
 ---
 

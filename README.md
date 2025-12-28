@@ -45,7 +45,7 @@ Create markdown files in `src/content/blog/`:
 ---
 title: 'Your Post Title'
 description: 'Brief description'
-pubDate: 2024-01-15
+pubDate: 2025-12-15
 tags: ['astro', 'three.js']
 ---
 
