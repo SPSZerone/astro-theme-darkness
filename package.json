@@ -16,9 +16,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kpab/astro-darkness"
+    "url": "https://github.com/SPSZerone/astro-theme-darkness"
   },
-  "homepage": "https://kpab.github.io/astro-darkness",
+  "homepage": "https://darkness.me.seapianosnow.com",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
