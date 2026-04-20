@@ -11,19 +11,38 @@ const sortedPosts = allBlogPosts.sort((a, b) =>
 );
 ---
 
+<!--
 <BaseLayout
   title="Blog - Darkness"
   description="Articles about web development, Three.js, and dark design"
+>
+-->
+<!-- SPS CUSTOM -->
+<BaseLayout
+  title="Blog"
+  description="Articles about programming, music"
 >
   <ThreeBackground />
   <Navigation />
 
   <main class="blog-page">
     <div class="container">
+      <!--
       <header class="blog-header">
         <h1 class="page-title">Blog</h1>
         <p class="page-subtitle">
           Exploring the depths of web development, animations, and dark design
+        </p>
+      </header>
+      -->
+      <!-- SPS CUSTOM -->
+      <header class="blog-header">
+        <h1 class="page-title">Blog | 博客</h1>
+        <p class="page-subtitle">
+          Explore articles on programming, game development, music, sports, and more.
+
+          <br/>
+          编程 | 游戏开发 | 音乐 | 运动
         </p>
       </header>
 
