@@ -37,7 +37,7 @@ const otherProjects = allProjects.filter(p => !p.data.featured);
 
       <!-- SPS CUSTOM -->
       <header class="projects-header">
-        <h1 class="page-title">Projects | 项目</h1>
+        <h1 class="page-title">Projects <br/> 项目</h1>
         <p class="page-subtitle">
           A collection of my projects.
           <br/>
@@ -50,7 +50,7 @@ const otherProjects = allProjects.filter(p => !p.data.featured);
           <!--
           <h2 class="section-title">Featured Projects</h2>
           -->
-          <h2 class="section-title">Featured Projects | 重点项目</h2>
+          <h2 class="section-title">Featured Projects <br/> 重点项目</h2>
           <div class="projects-grid featured-grid">
             {featuredProjects.map((project) => (
               <ProjectCard
@@ -72,7 +72,7 @@ const otherProjects = allProjects.filter(p => !p.data.featured);
           <!--
           <h2 class="section-title">Other Projects</h2>
           -->
-          <h2 class="section-title">Other Projects | 其他项目</h2>
+          <h2 class="section-title">Other Projects <br/> 其他项目</h2>
           <div class="projects-grid">
             {otherProjects.map((project) => (
               <ProjectCard
