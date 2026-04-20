@@ -2,9 +2,20 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ThreeBackground from '../components/ThreeBackground.astro';
 import Navigation from '../components/Navigation.astro';
+import SPSAbout from '../sps/components/About.astro';
 
-const base = import.meta.env.BASE_URL;
 ---
+
+
+<BaseLayout title="About - Darkness" description="About me and my work">
+  <ThreeBackground />
+  <Navigation />
+
+  <SPSAbout />
+</BaseLayout>
+
+
+<!--
 
 <BaseLayout title="About - Darkness" description="About me and my work">
   <ThreeBackground />
@@ -288,3 +299,5 @@ const base = import.meta.env.BASE_URL;
     }
   }
 </style>
+
+-->
