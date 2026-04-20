@@ -1,0 +1,104 @@
+---
+
+---
+
+<div class="typewriter-container">
+    <div class="typewriter-content hero-subtitle">
+        <span class="prompt-arrow">></span>
+        <span id="typewriter-text-en-us"></span>
+    </div>
+</div>
+
+<div class="typewriter-container">
+    <div class="typewriter-content hero-subtitle">
+        <span class="prompt-arrow">></span>
+        <span id="typewriter-text-zh-cn"></span>
+    </div>
+</div>
+
+<script>
+    import Typewriter from 'typewriter-effect/dist/core';
+
+    const el_en_us = document.querySelector('#typewriter-text-en-us');
+    if (el_en_us) {
+        const typewriter = new Typewriter(el_en_us, {
+            loop: true,
+            delay: 80,
+            deleteSpeed: 40
+        });
+
+        typewriter
+            .pauseFor(500)
+            .typeString('<span class="highlight">❤</span> Coding <span class="highlight"> | </span>Full-Stack Game Developer')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('<span class="highlight">❤</span> Classical Music <span class="highlight">Play</span> Piano Violin Cello')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('<span class="highlight">❤</span> Skydiving Cycling Running Tennis')
+            .pauseFor(2000)
+            .start();
+    }
+
+    const el_zh_cn = document.querySelector('#typewriter-text-zh-cn');
+    if (el_zh_cn) {
+        const typewriter = new Typewriter(el_zh_cn, {
+            loop: true,
+            delay: 80,
+            deleteSpeed: 40
+        });
+
+        typewriter
+            .pauseFor(500)
+            .typeString('<span class="highlight">❤</span> 编程 <span class="highlight">|</span> 游戏全栈开发者')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('<span class="highlight">❤</span> 古典音乐 <span class="highlight">演奏</span>  钢琴 小提琴 大提琴')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('<span class="highlight">❤</span> 跳伞 骑行 跑步 网球')
+            .pauseFor(2000)
+            .start();
+    }
+
+</script>
+
+<style>
+    .typewriter-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(var(--hero-subtitle-font-size) * 3); /* 5rem */
+    }
+
+    .typewriter-content {
+        display: flex; /* flex 保证箭头、文字、光标在同一水平基线上 */
+        align-items: flex-start; /* center */
+        line-height: var(--hero-subtitle-line-height);
+    }
+
+    .prompt-arrow {
+        color: #00AAAA;
+        margin-right: 0.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        line-height: var(--hero-subtitle-line-height);
+    }
+
+    :global(.highlight) {
+        color: #B026FF;
+        /* font-weight: bold; */
+    }
+
+    :global(.Typewriter__cursor) {
+        font-size: var(--hero-subtitle-font-size);
+        line-height: var(--hero-subtitle-line-height);
+        color: var(--color-text);
+        // font-weight: 300;
+        display: inline-block;
+        vertical-align: baseline; /* 确保底部对齐 */
+        margin-left: 0.5rem; /* 2px */
+    }
+</style>

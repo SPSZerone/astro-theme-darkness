@@ -20,6 +20,12 @@
 
   /* Spacing */
   --nav-height: 80px;
+
+  /* SPS CUSTOM */
+  /* Hero */
+  --hero-subtitle-font-size: clamp(1.25rem, 3vw, 1.75rem);
+  --hero-subtitle-line-height: 1.6;
+  --hero-description-font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
 * {
