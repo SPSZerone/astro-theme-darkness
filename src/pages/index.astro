@@ -8,6 +8,7 @@ import Navigation from '../components/Navigation.astro';
 import BlogCard from '../components/BlogCard.astro';
 
 import Hero from '../sps/components/Hero.astro';
+import Currently from '../sps/components/Currently.astro';
 import Skills from '../sps/components/Skills.astro';
 
 const base = import.meta.env.BASE_URL;
@@ -21,6 +22,7 @@ const recentPosts = allBlogPosts
   <ThreeBackground />
   <Navigation />
   <Hero />
+  <Currently />
   <Skills />
 
   <section class="recent-posts">
