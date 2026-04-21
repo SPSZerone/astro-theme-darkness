@@ -20,16 +20,6 @@
 
   /* Spacing */
   --nav-height: 80px;
-
-  /* SPS CUSTOM */
-  /* Hero */
-  --sps-twe-font-heading: 'Sarasa Term SC Nerd', 'JetBrainsMono Nerd Font Mono', system-ui, sans-serif;
-  --sps-font-body: 'Sarasa Term SC Nerd', 'JetBrainsMono Nerd Font Mono', system-ui, sans-serif;
-  /* --color-text: #F1F5F9; */
-  /* --color-text-dim: #94A3B8; */
-  --hero-subtitle-font-size: clamp(1.25rem, 3vw, 1.75rem);
-  --hero-subtitle-line-height: 1.6;
-  --hero-description-font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
 * {
