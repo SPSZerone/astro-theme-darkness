@@ -1,7 +1,7 @@
 ---
-import SPSHeroTWE from './HeroTWE.astro';
-import SPSHeroHome from './HeroHome.astro';
-import SPSTechStack from './TechStack.astro';
+import HeroTWE from '@sps/components/hero/TWE.astro';
+import HeroHome from '@sps/components/hero/Home.astro';
+import TechStack from './TechStack.astro';
 
 // Hero section - Clean, professional design
 const base = import.meta.env.BASE_URL;
@@ -13,9 +13,9 @@ const base = import.meta.env.BASE_URL;
     <h1 class="hero-title">
       <span class="title-text">William Chen <br> 陈威</span>
     </h1>
-    <p class="hero-subtitle"><SPSHeroTWE /></p>
+    <p class="hero-subtitle"><HeroTWE /></p>
     <p class="hero-description">
-      <SPSHeroHome />
+      <HeroHome />
     </p>
     <div class="hero-buttons">
       <a href={`${base}projects`} class="btn btn-primary">
@@ -29,7 +29,7 @@ const base = import.meta.env.BASE_URL;
         <span>Read Blog <br/> 我的博客</span>
       </a>
     </div>
-    <SPSTechStack />
+    <TechStack />
   </div>
 
   <!-- Decorative elements -->

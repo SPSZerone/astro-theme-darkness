@@ -4,7 +4,9 @@
     "jsx": "react-jsx",
     "jsxImportSource": "astro",
     "paths": {
-      "@sps/*": ["./src/sps/*"]
+      "@styles/*": ["./src/styles/*"],
+      "@sps/*": ["./src/sps/*"],
+      "@/*": ["./src/*"]
     }
   },
 }
