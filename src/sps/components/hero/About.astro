@@ -1,19 +1,22 @@
 ---
-import HeroIntro from './Intro.astro';
-import HeroQuoteEN from './QuoteEN.astro';
-import HeroQuoteZH from './QuoteZH.astro';
+import TWE from './TWE.astro';
+import Intro from './Intro.astro';
+import QuoteEN from './QuoteEN.astro';
+import QuoteZH from './QuoteZH.astro';
 ---
 
+<TWE />
+
 <p class="hero-description">
-  <HeroIntro />
+  <Intro />
 </p>
 
 <blockquote class="quote-svg-bg hero-description">
-  <HeroQuoteEN />
+  <QuoteEN />
 </blockquote>
 
 <blockquote class="quote-svg-bg hero-description">
-  <HeroQuoteZH />
+  <QuoteZH />
 </blockquote>
 
 <style>

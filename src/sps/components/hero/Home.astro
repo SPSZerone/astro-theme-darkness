@@ -1,20 +1,25 @@
 ---
-import HeroIntro from './Intro.astro';
-import HeroQuoteEN from './QuoteEN.astro';
-import HeroQuoteZH from './QuoteZH.astro';
+import TWE from './TWE.astro';
+import Intro from './Intro.astro';
+// import QuoteEN from './QuoteEN.astro';
+// import QuoteZH from './QuoteZH.astro';
 ---
 
+<TWE />
+
 <p class="hero-description">
-  <HeroIntro />
+  <Intro />
 </p>
 
+<!--
 <blockquote class="quote-svg-bg hero-description">
-  <HeroQuoteEN />
+  <QuoteEN />
 </blockquote>
 
 <blockquote class="quote-svg-bg hero-description">
-  <HeroQuoteZH />
+  <QuoteZH />
 </blockquote>
+-->
 
 <style>
 
@@ -26,6 +31,7 @@ import HeroQuoteZH from './QuoteZH.astro';
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   /* use same color with `.hero-description -> color: var(--color-text-dim);` -> fill='%2394A3B8' */
