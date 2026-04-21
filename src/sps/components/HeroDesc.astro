@@ -1,41 +1,19 @@
 ---
-import HeroDescCommon from './HeroDescCommon.astro';
+import HeroIntro from './HeroIntro.astro';
+import HeroQuoteEN from './HeroQuoteEN.astro';
+import HeroQuoteZH from './HeroQuoteZH.astro';
 ---
 
 <p class="hero-description">
-  <HeroDescCommon />
+  <HeroIntro />
 </p>
 
 <blockquote class="quote-svg-bg hero-description">
-  Follow Heart.
-  <br/>
-  No Music, No Life.
-  <br/>
-  Inner Peace. Live in the present.
-  <br/>
-  Mind and body as one. Knowledge and action as one.
-  <br/>
-  Less is More. Slow is Fast.
-  <br/>
-  Life without limits. Stay Curious.
-  <br/>
-  Be a Better You.
+  <HeroQuoteEN />
 </blockquote>
 
 <blockquote class="quote-svg-bg hero-description">
-  追随内心
-  <br/>
-  音乐即生命
-  <br/>
-  内心平静  活在当下
-  <br/>
-  身心合一  知行合一
-  <br/>
-  少即是多  慢即是快
-  <br/>
-  人生不设限  保持好奇心
-  <br/>
-  成为更好的自己
+  <HeroQuoteZH />
 </blockquote>
 
 <style>
@@ -51,11 +29,11 @@ import HeroDescCommon from './HeroDescCommon.astro';
   }
 
   .quote-svg-bg {
-      padding: 1rem 1rem 1rem 3rem;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23cbd5e1'%3E%3Cpath d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: top 0 left 0;
-      background-size: 2rem;
+    padding: 1rem 1rem 1rem 3rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2394A3B8'%3E%3Cpath d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top 0 left 0;
+    background-size: 2rem;
   }
 
 </style>
