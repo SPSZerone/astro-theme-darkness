@@ -7,9 +7,9 @@ import Navigation from '../components/Navigation.astro';
 // import Skills from '../components/Skills.astro';
 import BlogCard from '../components/BlogCard.astro';
 
-import Hero from '@spstheme/pages/home/Hero.astro';
-import Currently from '@spstheme/pages/home/Currently.astro';
-import Skills from '@spstheme/pages/home/Skills.astro';
+import Hero from '@spscommon/pages/home/Hero.astro';
+import Currently from '@spscommon/pages/home/Currently.astro';
+import Skills from '@spscommon/pages/home/Skills.astro';
 
 const base = import.meta.env.BASE_URL;
 const allBlogPosts = await getCollection('blog');
@@ -24,6 +24,7 @@ const recentPosts = allBlogPosts
 <BaseLayout title="Darkness - William Chen - 陈威 - SPS">
   <ThreeBackground />
   <Navigation />
+
   <Hero />
   <Currently />
   <Skills />
