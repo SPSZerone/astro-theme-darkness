@@ -1,5 +1,8 @@
 :root {
-  --sps-hero-twe-font-family:          'Sarasa Term SC Nerd', 'JetBrainsMono Nerd Font Mono', system-ui, sans-serif;
+  --sps-hero-font-family:              'Sarasa Term SC Nerd', 'JetBrainsMono Nerd Font Mono', system-ui, sans-serif;
+
+  --sps-hero-greeting-text-color:      #3B82F6; /* 000000 3B82F6 */
+
   --sps-hero-twe-font-size:            clamp(1.25rem, 3vw, 1.75rem);
   --sps-hero-twe-line-height:          1.6;
   --sps-hero-twe-arrow-color:          #00FFFF; /* 00AAAA 00FFFF */
@@ -11,6 +14,8 @@
 }
 
 html.dark {
+  --sps-hero-greeting-text-color:      #000000; /* 000000 3B82F6 */
+
   --sps-hero-twe-arrow-color:          #00FFFF; /* 00AAAA 00FFFF */
   --sps-hero-twe-text-color:           #F1F5F9; /* 000000 F1F5F9 */
   --sps-hero-twe-text-highlight-color: #B026FF; /* 6A0DAD B026FF */
