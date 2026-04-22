@@ -1,48 +1,61 @@
 :root {
-  --sps-hero-font-family:                  'Sarasa Term SC Nerd', 'JetBrainsMono Nerd Font Mono', system-ui, sans-serif;
+  --sps-hero-font-family:                                  'Sarasa Term SC Nerd', 'JetBrainsMono Nerd Font Mono', system-ui, sans-serif;
 
-  --sps-hero-nav-height:                   80px;
+  --sps-hero-nav-height:                                   80px;
 
-  --sps-hero-greeting-text-color:          #3B82F6; /* 000000 3B82F6 */
+  --sps-hero-greeting-text-color:                          #3B82F6; /* 000000 3B82F6 */
 
-  --sps-hero-title-color-primary:          #3B82F6;
-  --sps-hero-title-color-text:             #F1F5F9;
-  --sps-hero-title-color-border:           #334155;
+  --sps-hero-title-color-primary:                          #3B82F6;
+  --sps-hero-title-color-text:                             #F1F5F9;
+  --sps-hero-title-color-border:                           #334155;
 
-  --sps-hero-title-color-accent-purple:    #8B5CF6;
-  --sps-hero-title-color-accent-pink:      #EC4899;
-  --sps-hero-title-color-accent-blue:      #3B82F6;
-  --sps-hero-title-color-accent-cyan:      #06B6D4;
+  --sps-hero-title-color-accent-purple:                    #8B5CF6;
+  --sps-hero-title-color-accent-pink:                      #EC4899;
+  --sps-hero-title-color-accent-blue:                      #3B82F6;
+  --sps-hero-title-color-accent-cyan:                      #06B6D4;
 
-  --sps-hero-twe-font-size:                clamp(1.25rem, 3vw, 1.75rem);
-  --sps-hero-twe-line-height:              1.6;
-  --sps-hero-twe-arrow-color:              #00FFFF; /* 00AAAA 00FFFF */
-  --sps-hero-twe-text-color:               #F1F5F9; /* 000000 F1F5F9 */
-  --sps-hero-twe-text-highlight-color:     #B026FF; /* 6A0DAD B026FF */
+  --sps-hero-twe-font-size:                                clamp(1.25rem, 3vw, 1.75rem);
+  --sps-hero-twe-line-height:                              1.6;
+  --sps-hero-twe-arrow-color:                              #00FFFF; /* 00AAAA 00FFFF */
+  --sps-hero-twe-text-color:                               #F1F5F9; /* 000000 F1F5F9 */
+  --sps-hero-twe-text-highlight-color:                     #B026FF; /* 6A0DAD B026FF */
 
-  --sps-hero-description-font-size:        clamp(1rem, 1.5vw, 1.125rem);
-  --sps-hero-description-color-text:       #94A3B8; /* 000000 94A3B8 FFFFFF */
+  --sps-hero-description-font-size:                        clamp(1rem, 1.5vw, 1.125rem);
+  --sps-hero-description-color-text:                       #94A3B8; /* 000000 94A3B8 FFFFFF */
 
-  --sps-hero-section-title-text-color:     #FFFFFF; /* 000000 FFFFFF */
-  --sps-hero-section-subtitle-text-color:  #F1F5F9; /* 111111 F1F5F9 */
+  --sps-hero-section-title-text-color:                     #FFFFFF; /* 000000 FFFFFF */
+  --sps-hero-section-subtitle-text-color:                  #F1F5F9; /* 111111 F1F5F9 */
 
-  --sps-hero-btn-primary-text-color:       #FFFFFF;
-  --sps-hero-btn-secondary-text-color:     #F1F5F9;
+  --sps-hero-btn-primary-text-color:                       #FFFFFF;
+  --sps-hero-btn-secondary-text-color:                     #F1F5F9;
 
-  --sps-hero-skill-color-bg-dark:          #0F172A;
-  --sps-hero-skill-color-bg-darker:        #020617;
-  --sps-hero-skill-color-bg-card:          #1E293B;
+  --sps-skill-category-bg-color:                           #1E293B; /* EEEEEE 1E293B */
+  --sps-skill-category-title-color:                        #FFFFFF; /* 000000 FFFFFF */
+  --sps-skill-tag-name-color:                              #F1F5F9; /* 111111 F1F5F9 */
+
+  --sps-skill-category-icon-bg-color-currently:            rgba(139, 92, 246, 0.1);
+  --sps-skill-category-icon-bg-color-normal:               rgba(59, 130, 246, 0.1);
+  --sps-skill-tag-bg-color-currently:                      rgba(139, 92, 246, 0.08);
+  --sps-skill-tag-bg-color-normal:                         rgba(59, 130, 246, 0.08);
+
+  --sps-skill-tag-border-color-normal-currently:           var(--sps-hero-title-color-accent-cyan);
+  --sps-skill-tag-border-color-horver-currently:           var(--sps-hero-title-color-accent-blue);
+  --sps-skill-tag-border-color-horver-normal:              var(--sps-hero-title-color-accent-purple);
 }
 
 html.dark {
-  --sps-hero-greeting-text-color:          #000000; /* 000000 3B82F6 */
+  --sps-hero-greeting-text-color:                          #000000; /* 000000 3B82F6 */
 
-  --sps-hero-twe-arrow-color:              #00FFFF; /* 00AAAA 00FFFF */
-  --sps-hero-twe-text-color:               #F1F5F9; /* 000000 F1F5F9 */
-  --sps-hero-twe-text-highlight-color:     #B026FF; /* 6A0DAD B026FF */
+  --sps-hero-twe-arrow-color:                              #00FFFF; /* 00AAAA 00FFFF */
+  --sps-hero-twe-text-color:                               #F1F5F9; /* 000000 F1F5F9 */
+  --sps-hero-twe-text-highlight-color:                     #B026FF; /* 6A0DAD B026FF */
 
-  --sps-hero-description-color-text:       #94A3B8; /* 000000 94A3B8 FFFFFF */
+  --sps-hero-description-color-text:                       #94A3B8; /* 000000 94A3B8 FFFFFF */
 
-  --sps-hero-section-title-text-color:     #FFFFFF; /* 000000 FFFFFF */
-  --sps-hero-section-subtitle-text-color:  #F1F5F9; /* AAAAAA F1F5F9 */
+  --sps-hero-section-title-text-color:                     #FFFFFF; /* 000000 FFFFFF */
+  --sps-hero-section-subtitle-text-color:                  #F1F5F9; /* AAAAAA F1F5F9 */
+
+  --sps-skill-category-bg-color:                           #1E293B; /* EEEEEE 1E293B */
+  --sps-skill-category-title-color:                        #FFFFFF; /* 000000 FFFFFF */
+  --sps-skill-tag-name-color:                              #F1F5F9; /* 111111 F1F5F9 */
 }

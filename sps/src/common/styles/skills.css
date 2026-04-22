@@ -32,7 +32,7 @@
 }
 
 .skill-category {
-    background: var(--sps-hero-skill-color-bg-card);
+    background: var(--sps-skill-category-bg-color);
     border: 1px solid var(--sps-hero-title-color-border);
     border-radius: 1rem;
     padding: 1.5rem;
@@ -63,13 +63,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(59, 130, 246, 0.1);
+    background: var(--sps-skill-category-icon-bg-color-normal);
     border-radius: 0.5rem;
     color: var(--sps-hero-title-color-accent-blue);
 }
 
 .category-icon.learning {
-    background: rgba(139, 92, 246, 0.1);
+    background: var(--sps-skill-category-icon-bg-color-currently);
     color: var(--sps-hero-title-color-accent-purple);
 }
 
@@ -77,7 +77,7 @@
     font-family: var(--sps-hero-font-family);
     font-size: 1.125rem;
     font-weight: 600;
-    color: var(--sps-hero-btn-primary-text-color);
+    color: var(--sps-skill-category-title-color);
 }
 
 .skill-list {
@@ -88,11 +88,11 @@
 
 .skill-tag {
     padding: 0.375rem 0.75rem;
-    background: rgba(59, 130, 246, 0.08);
+    background: var(--sps-skill-tag-bg-color-normal);
     border: 1px solid var(--sps-hero-title-color-border);
     border-radius: 0.375rem;
     font-size: 0.8rem;
-    color: var(--sps-hero-btn-secondary-text-color);
+    color: var(--sps-skill-tag-name-color);
     transition: all 0.2s ease;
 }
 
@@ -102,8 +102,8 @@
 }
 
 .skill-tag.learning {
-    background: rgba(139, 92, 246, 0.08);
-    border-color: rgba(139, 92, 246, 0.3);
+    background: var(--sps-skill-tag-bg-color-currently);
+    border-color: var(--sps-skill-tag-border-color-normal-currently);
 }
 
 .skill-tag.learning:hover {
