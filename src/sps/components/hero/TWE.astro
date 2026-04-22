@@ -4,18 +4,14 @@
 
 <div class="typewriter-container">
   <div class="typewriter-content hero-subtitle">
-    <!--
     <span class="prompt-arrow">></span>
-    -->
     <span id="typewriter-text-en-us"></span>
   </div>
 </div>
 
 <div class="typewriter-container">
   <div class="typewriter-content hero-subtitle">
-    <!--
     <span class="prompt-arrow">></span>
-    -->
     <span id="typewriter-text-zh-cn"></span>
   </div>
 </div>
@@ -77,9 +73,9 @@
 <style>
 
   .hero-subtitle {
-    font-family: var(--sps-twe-font-heading);
-    font-size: var(--sps-hero-subtitle-font-size);
-    color: var(--sps-color-text);
+    font-family: var(--sps-hero-twe-font-family);
+    font-size: var(--sps-hero-twe-font-size);
+    color: var(--sps-hero-twe-text-color);
     margin-bottom: 1.5rem;
     font-weight: 500;
     text-align: center;
@@ -90,33 +86,33 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: calc(var(--sps-hero-subtitle-font-size) * 3); /* 5rem */
+      height: calc(var(--sps-hero-twe-font-size) * 3); /* 5rem */
   }
 
   .typewriter-content {
       display: flex; /* flex 保证箭头、文字、光标在同一水平基线上 */
       align-items: flex-start; /* center */
-      line-height: var(--sps-hero-subtitle-line-height);
+      line-height: var(--sps-hero-twe-line-height);
   }
 
   .prompt-arrow {
-      color: #00AAAA;
+      color: var(--sps-hero-twe-arrow-color);
       margin-right: 0.5rem;
       font-weight: bold;
       display: flex;
       align-items: center;
-      line-height: var(--sps-hero-subtitle-line-height);
+      line-height: var(--sps-hero-twe-line-height);
   }
 
   :global(.highlight) {
-      color: #B026FF;
+      color: var(--sps-hero-twe-text-highlight-color);
       /* font-weight: bold; */
   }
 
   :global(.Typewriter__cursor) {
-      font-size: var(--sps-hero-subtitle-font-size);
-      line-height: var(--sps-hero-subtitle-line-height);
-      color: var(--sps-color-text);
+      font-size: var(--sps-hero-twe-font-size);
+      line-height: var(--sps-hero-twe-line-height);
+      color: var(--sps-hero-twe-arrow-color);
       /* font-weight: 300; */
       display: inline-block;
       vertical-align: baseline; /* 确保底部对齐 */
