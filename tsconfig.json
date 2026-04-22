@@ -5,8 +5,9 @@
     "jsxImportSource": "astro",
     "paths": {
       "@styles/*": ["./src/styles/*"],
-      "@sps/*": ["./src/sps/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@spscommon/*": ["./src/sps/common/*"],
+      "@spstheme/*": ["./src/sps/themes/darkness/*"]
     }
   },
 }
