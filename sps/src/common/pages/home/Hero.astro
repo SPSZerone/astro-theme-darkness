@@ -1,9 +1,10 @@
 ---
 import HeroHome from '@spscommon/components/hero/Home.astro';
+import Buttons from './Buttons.astro';
 import TechStack from './TechStack.astro';
 
 // Hero section - Clean, professional design
-const base = import.meta.env.BASE_URL;
+// const base = import.meta.env.BASE_URL;
 ---
 
 <section class="hero">
@@ -15,19 +16,10 @@ const base = import.meta.env.BASE_URL;
     <p class="hero-description">
       <HeroHome />
     </p>
-    <div class="hero-buttons">
-      <a href={`${base}projects`} class="btn btn-primary">
-        <span>View Projects <br/> 我的作品</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-      <a href={`${base}blog`} class="btn btn-secondary">
-        <span>Read Blog <br/> 我的博客</span>
-      </a>
-    </div>
+
+    <Buttons />
     <TechStack />
+
   </div>
 
   <!-- Decorative elements -->
@@ -45,7 +37,7 @@ const base = import.meta.env.BASE_URL;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: calc(var(--nav-height) + 2rem) 2rem 4rem;
+    padding: calc(var(--sps-hero-nav-height) + 2rem) 2rem 4rem;
   }
 
   .hero-content {
@@ -75,7 +67,7 @@ const base = import.meta.env.BASE_URL;
   }
 
   .title-text {
-    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-primary) 50%, var(--color-accent-purple) 100%);
+    background: linear-gradient(135deg, var(--sps-hero-title-color-text) 0%, var(--sps-hero-title-color-primary) 50%, var(--sps-hero-title-color-accent-purple) 100%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -90,64 +82,6 @@ const base = import.meta.env.BASE_URL;
     50% {
       background-position: 100% 50%;
     }
-  }
-
-  .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: var(--font-body);
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s ease;
-  }
-
-  .btn-primary {
-    background: var(--color-primary);
-    color: white;
-    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
-  }
-
-  .btn-primary:hover {
-    background: #2563EB;
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
-  }
-
-  .btn-primary svg {
-    transition: transform 0.2s ease;
-  }
-
-  .btn-primary:hover svg {
-    transform: translateX(4px);
-  }
-
-  .btn-secondary {
-    background: transparent;
-    color: var(--color-text);
-    border: 1px solid var(--color-border);
-  }
-
-  .btn-secondary:hover {
-    background: rgba(59, 130, 246, 0.1);
-    border-color: var(--color-primary);
-  }
-
-  .tech-badge:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
   }
 
   /* Decorative glows */
@@ -171,7 +105,7 @@ const base = import.meta.env.BASE_URL;
   .glow-1 {
     width: 400px;
     height: 400px;
-    background: var(--color-primary);
+    background: var(--sps-hero-title-color-primary);
     top: 10%;
     left: 10%;
     animation: float 8s ease-in-out infinite;
@@ -180,7 +114,7 @@ const base = import.meta.env.BASE_URL;
   .glow-2 {
     width: 300px;
     height: 300px;
-    background: var(--color-accent-purple);
+    background: var(--sps-hero-title-color-accent-purple);
     bottom: 20%;
     right: 10%;
     animation: float 6s ease-in-out infinite reverse;
@@ -221,7 +155,7 @@ const base = import.meta.env.BASE_URL;
 
   @media (max-width: 768px) {
     .hero {
-      padding-top: calc(var(--nav-height) + 3rem);
+      padding-top: calc(var(--sps-hero-nav-height) + 3rem);
     }
 
     .hero-buttons {
