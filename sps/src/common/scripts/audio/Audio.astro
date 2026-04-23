@@ -12,7 +12,6 @@
   // 一旦用户第一次触碰屏幕，立刻静默初始化音频上下文。
   // { once: true } 极其重要，它确保这段代码在整个生命周期只执行一次。
   document.addEventListener('pointerdown', () => {
-    // 可以在这里设定一个全局的初始音量
     tiks.init({
       theme: 'crisp', /* 'soft' | 'crisp', */
       volume: 0.3
@@ -78,7 +77,7 @@
   });
 
   // 记录当前正在悬停的元素，防止子元素引起的重复触发
-  let currentHoverTarget = null;
+  let currentHoverTarget: Element | null = null;
 
   document.addEventListener('mouseover', (event) => {
     const target = event.target as HTMLElement;
