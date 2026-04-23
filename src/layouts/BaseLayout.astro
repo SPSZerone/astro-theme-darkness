@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import '@spscommon/styles/sps.css';
 import '@spscommon/styles/skills.css';
+import AudioInit from '@spscommon/scripts/audio/Init.astro';
 import { ClientRouter } from 'astro:transitions';
 
 interface Props {
@@ -110,5 +111,8 @@ const {
         });
       });
     </script>
+
+    <AudioInit />
+
   </body>
 </html>

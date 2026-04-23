@@ -1,0 +1,20 @@
+---
+
+---
+
+<script>
+  import { tiks } from '@rexa-developer/tiks';
+
+  // 将原本直接执行的逻辑，包裹在 astro:page-load 中
+  document.addEventListener('astro:page-load', () => {
+
+    const buttons = document.querySelectorAll('.tiks-success');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', (_event) => {
+        tiks.success();
+      });
+    });
+
+  });
+</script>
