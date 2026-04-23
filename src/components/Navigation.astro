@@ -47,10 +47,10 @@ const relativePath = currentPath.replace(base.slice(0, -1), '') || '/';
 <!-- Mobile menu overlay -->
 <div class="mobile-menu" id="mobile-menu">
   <div class="mobile-menu-content">
-    <a href={base} class:list={['mobile-nav-link', { active: relativePath === '/' }]}>Home</a>
-    <a href={`${base}blog`} class:list={['mobile-nav-link', { active: relativePath.startsWith('/blog') }]}>Blog</a>
-    <a href={`${base}projects`} class:list={['mobile-nav-link', { active: relativePath === '/projects' }]}>Projects</a>
-    <a href={`${base}about`} class:list={['mobile-nav-link', { active: relativePath === '/about' }]}>About</a>
+    <a href={base} class:list={['mobile-nav-link tiks-success tiks-hover', { active: relativePath === '/' }]}>Home</a>
+    <a href={`${base}blog`} class:list={['mobile-nav-link tiks-success tiks-hover', { active: relativePath.startsWith('/blog') }]}>Blog</a>
+    <a href={`${base}projects`} class:list={['mobile-nav-link tiks-success tiks-hover', { active: relativePath === '/projects' }]}>Projects</a>
+    <a href={`${base}about`} class:list={['mobile-nav-link tiks-success tiks-hover', { active: relativePath === '/about' }]}>About</a>
   </div>
 </div>
 
