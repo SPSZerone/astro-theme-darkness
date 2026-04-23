@@ -14,7 +14,7 @@ const { title, description, image, link, github, tags, featured } = Astro.props;
 const imageSrc = image?.startsWith('/') ? `${base}${image.slice(1)}` : image;
 ---
 
-<article class="project-card" class:list={{ featured }}>
+<article class="project-card tiks-hover" class:list={{ featured }}>
   <div class="project-card-content">
     {featured && <span class="featured-badge">Featured</span>}
     {image && (

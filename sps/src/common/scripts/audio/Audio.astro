@@ -5,16 +5,97 @@
 <script>
   import { tiks } from '@rexa-developer/tiks';
 
-  // 将原本直接执行的逻辑，包裹在 astro:page-load 中
-  document.addEventListener('astro:page-load', () => {
-
-    const buttons = document.querySelectorAll('.tiks-success');
-
-    buttons.forEach((button) => {
-      button.addEventListener('click', (_event) => {
-        tiks.success();
-      });
+  // ==========================================
+  // 👇 tiks.init 👇
+  // ==========================================
+  // 监听 'pointerdown' (兼顾鼠标和手机触摸)。
+  // 一旦用户第一次触碰屏幕，立刻静默初始化音频上下文。
+  // { once: true } 极其重要，它确保这段代码在整个生命周期只执行一次。
+  document.addEventListener('pointerdown', () => {
+    // 可以在这里设定一个全局的初始音量
+    tiks.init({
+      theme: 'crisp', /* 'soft' | 'crisp', */
+      volume: 0.3
+      // volume: 1.0
     });
+  }, { once: true });
 
+
+  // ==========================================
+  // 👇 listen click 👇
+  // ==========================================
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement;
+
+    {
+      const button = target.closest('.tiks-click');
+      if (button) {
+        tiks.click();
+      }
+    }
+
+    {
+      const button = target.closest('.tiks-success');
+      if (button) {
+        tiks.success();
+      }
+    }
+
+    {
+      const button = target.closest('.tiks-error');
+      if (button) {
+        tiks.error();
+      }
+    }
+
+    {
+      const button = target.closest('.tiks-warning');
+      if (button) {
+        tiks.warning();
+      }
+    }
+
+    {
+      const button = target.closest('.tiks-pop');
+      if (button) {
+        tiks.pop();
+      }
+    }
+
+    {
+      const button = target.closest('.tiks-swoosh');
+      if (button) {
+        tiks.swoosh();
+      }
+    }
+
+    {
+      const button = target.closest('.tiks-notify');
+      if (button) {
+        tiks.notify();
+      }
+    }
+  });
+
+  // 记录当前正在悬停的元素，防止子元素引起的重复触发
+  let currentHoverTarget = null;
+
+  document.addEventListener('mouseover', (event) => {
+    const target = event.target as HTMLElement;
+
+    // 查找带有 .tiks-hover 类的目标元素
+    const hoverElement = target.closest('.tiks-hover');
+
+    if (hoverElement) {
+      // 只有当鼠标进入一个全新的 .tiks-hover 元素时才发声
+      if (hoverElement !== currentHoverTarget) {
+        // ⚠️ Hover 声音必须非常轻！可以直接在调用时覆盖音量，或者使用专用的 hover 方法
+        tiks.hover();
+        currentHoverTarget = hoverElement;
+      }
+    } else {
+      // 鼠标离开了带有 .tiks-hover 的区域，清空记录
+      currentHoverTarget = null;
+    }
   });
 </script>

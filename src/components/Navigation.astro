@@ -16,19 +16,19 @@ const relativePath = currentPath.replace(base.slice(0, -1), '') || '/';
     <!-- # #################################################################################################### -->
     <!-- # SPS CUSTOM -->
     <!-- # #################################################################################################### -->
-    <a href={base} class="logo tiks-success">WILLIAM CHEN - 陈威</a>
+    <a href={base} class="logo tiks-success tiks-hover">WILLIAM CHEN - 陈威</a>
 
     <div class="nav-links">
-      <a href={base} class:list={['nav-link', { active: relativePath === '/' }]} class="tiks-success">
+      <a href={base} class:list={['nav-link', { active: relativePath === '/' }]} class="tiks-success tiks-hover">
         Home
       </a>
-      <a href={`${base}blog`} class:list={['nav-link', { active: relativePath.startsWith('/blog') }]} class="tiks-success">
+      <a href={`${base}blog`} class:list={['nav-link', { active: relativePath.startsWith('/blog') }]} class="tiks-success tiks-hover">
         Blog
       </a>
-      <a href={`${base}projects`} class:list={['nav-link', { active: relativePath === '/projects' }]} class="tiks-success">
+      <a href={`${base}projects`} class:list={['nav-link', { active: relativePath === '/projects' }]} class="tiks-success tiks-hover">
         Projects
       </a>
-      <a href={`${base}about`} class:list={['nav-link', { active: relativePath === '/about' }]} class="tiks-success">
+      <a href={`${base}about`} class:list={['nav-link', { active: relativePath === '/about' }]} class="tiks-success tiks-hover">
         About
       </a>
     </div>
