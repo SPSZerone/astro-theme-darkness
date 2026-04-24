@@ -30,15 +30,15 @@ jobs:
       SPS_DG_PATH: "./sps-digital-garden"
 
     steps:
+      - name: Prepare Dynamic Environment Variables
+        run: |
+          echo "BUILD_PATH=./astro-theme-${{ env.THEME }}" >> $GITHUB_ENV
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
           path: ${{ env.BUILD_PATH }}
           ref: 'publish'
-
-      - name: Prepare Dynamic Environment Variables
-        run: |
-          echo "BUILD_PATH=./astro-theme-${{ env.THEME }}" >> $GITHUB_ENV
 
       - name: Checkout sps-digital-garden
         uses: actions/checkout@v4
