@@ -6,8 +6,8 @@
     "paths": {
       "@styles/*": ["./src/styles/*"],
       "@/*": ["./src/*"],
-      "@spscommon/*": ["./sps/src/common/*"],
-      "@spstheme/*": ["./sps/src/themes/darkness/*"]
+      "@spscommon/*": ["./sps/common/src/*"],
+      "@spslocal/*": ["./sps/local/src/*"]
     }
   },
 }
