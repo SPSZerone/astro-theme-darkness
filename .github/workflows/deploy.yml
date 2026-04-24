@@ -39,6 +39,14 @@ jobs:
       - name: ls .
         run: ls .
 
+      - name: Setup Nushell
+        uses: nushell/setup-nu@v3
+        with:
+          nu-version: '0.92.1'
+
+      - name: "SPS Digital Garden -> scripts/publish.nu"
+        run: nu ${{ env.SPS_DG_PATH }}/scripts/publish.nu --ssg astro -p ${{ env.BUILD_PATH }}
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
