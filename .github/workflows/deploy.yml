@@ -15,7 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BUILD_PATH: "."
+  BUILD_PATH:  "./astro-theme-darkness"
+  SPS_DG_PATH: "./sps-digital-garden"
 
 jobs:
   build:
@@ -24,6 +25,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          path: ${{ env.BUILD_PATH }}
+
+      - name: Checkout sps-digital-garden
+        uses: actions/checkout@v4
+        with:
+          repository: SPSZerone/sps-digital-garden
+          ref: main
+          path: ${{ env.SPS_DG_PATH }}
+          token: ${{ secrets.SPS_DG_PUBLISH_PAT }}
+
+      - name: ls .
+        run: ls .
 
       - name: Setup Node
         uses: actions/setup-node@v4
