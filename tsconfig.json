@@ -7,7 +7,7 @@
       "@styles/*": ["./src/styles/*"],
       "@/*": ["./src/*"],
       "@spscommon/*": ["./sps/common/src/*"],
-      "@spslocal/*": ["./sps/local/src/*"]
+      "@spscustom/*": ["./sps/custom/src/*"]
     }
   },
 }
