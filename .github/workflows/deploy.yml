@@ -54,7 +54,7 @@ jobs:
           nu-version: '0.112.2'
 
       - name: "SPS Digital Garden -> scripts/publish.nu"
-        run: nu ${{ env.SPS_DG_PATH }}/scripts/publish.nu --s astro -t ${{ env.THEME }} -p ${{ env.BUILD_PATH }}
+        run: nu ${{ env.SPS_DG_PATH }}/scripts/publish.nu -s astro -t ${{ env.THEME }} -p ${{ env.BUILD_PATH }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
