@@ -40,7 +40,7 @@ jobs:
         run: ls .
 
       - name: Setup Nushell
-        uses: nushell/setup-nu@v3
+        uses: hustcer/setup-nu@v3
         with:
           nu-version: '0.92.1'
 
