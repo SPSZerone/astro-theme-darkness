@@ -16,22 +16,22 @@
 
   --sps-hero-twe-font-size:                                clamp(1.25rem, 3vw, 1.75rem);
   --sps-hero-twe-line-height:                              1.6;
-  /* --sps-hero-twe-arrow-color:                              #00FFFF; */ /* 00AAAA 00FFFF */
-  /* --sps-hero-twe-text-color:                               #F1F5F9; */ /* 000000 F1F5F9 */
-  /* --sps-hero-twe-text-highlight-color:                     #B026FF; */ /* 6A0DAD B026FF */
+  /* --sps-hero-twe-arrow-color:                              #00AAAA; */ /* 00AAAA 00FFFF */
+  /* --sps-hero-twe-text-color:                               #000000; */ /* 000000 F1F5F9 */
+  /* --sps-hero-twe-text-highlight-color:                     #6A0DAD; */ /* 6A0DAD B026FF */
 
   --sps-hero-description-font-size:                        clamp(1rem, 1.5vw, 1.125rem);
-  /* --sps-hero-description-color-text:                       #94A3B8; */ /* 000000 94A3B8 FFFFFF */
+  /* --sps-hero-description-color-text:                       #000000; */ /* 000000 94A3B8 FFFFFF */
 
-  /* --sps-hero-section-title-text-color:                     #FFFFFF; */ /* 000000 FFFFFF */
-  /* --sps-hero-section-subtitle-text-color:                  #F1F5F9; */ /* 111111 F1F5F9 */
+  /* --sps-hero-section-title-text-color:                     #000000; */ /* 000000 FFFFFF */
+  /* --sps-hero-section-subtitle-text-color:                  #111111; */ /* 111111 F1F5F9 */
 
   --sps-hero-btn-primary-text-color:                       #FFFFFF;
   --sps-hero-btn-secondary-text-color:                     #F1F5F9;
 
-  /* --sps-skill-category-bg-color:                           #1E293B; */ /* EEEEEE 1E293B */
-  /* --sps-skill-category-title-color:                        #FFFFFF; */ /* 000000 FFFFFF */
-  /* --sps-skill-tag-name-color:                              #F1F5F9; */ /* 111111 F1F5F9 */
+  /* --sps-skill-category-bg-color:                           #EEEEEE; */ /* EEEEEE 1E293B */
+  /* --sps-skill-category-title-color:                        #000000; */ /* 000000 FFFFFF */
+  /* --sps-skill-tag-name-color:                              #111111; */ /* 111111 F1F5F9 */
 
   --sps-skill-category-icon-bg-color-currently:            rgba(139, 92, 246, 0.1);
   --sps-skill-category-icon-bg-color-normal:               rgba(59, 130, 246, 0.1);
@@ -66,13 +66,13 @@
 }
 
 html.dark {
-  /* --sps-hero-greeting-text-color:                          #000000; */ /* 000000 3B82F6 */
+  /* --sps-hero-greeting-text-color:                          #3B82F6; */ /* 000000 3B82F6 */
 
   /* --sps-hero-twe-arrow-color:                              #00FFFF; */ /* 00AAAA 00FFFF */
   /* --sps-hero-twe-text-color:                               #F1F5F9; */ /* 000000 F1F5F9 */
   /* --sps-hero-twe-text-highlight-color:                     #B026FF; */ /* 6A0DAD B026FF */
 
-  /* --sps-hero-description-color-text:                       #94A3B8; */ /* 000000 94A3B8 FFFFFF */
+  /* --sps-hero-description-color-text:                       #FFFFFF; */ /* 000000 94A3B8 FFFFFF */
 
   /* --sps-hero-section-title-text-color:                     #FFFFFF; */ /* 000000 FFFFFF */
   /* --sps-hero-section-subtitle-text-color:                  #F1F5F9; */ /* AAAAAA F1F5F9 */
