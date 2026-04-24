@@ -1,19 +1,65 @@
 ---
+import { site as commonSite } from '@spscommon/data/site';
+import { site as customSite } from '@spscustom/data/site';
+
 const base = import.meta.env.BASE_URL;
 ---
 
-<div class="hero-buttons">
-  <a href={`${base}projects`} class="btn btn-primary tiks-success tiks-hover">
-    <span>View Projects <br/> 我的作品</span>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="5" y1="12" x2="19" y2="12"></line>
-      <polyline points="12 5 19 12 12 19"></polyline>
-    </svg>
-  </a>
-  <a href={`${base}blog`} class="btn btn-secondary tiks-success tiks-hover">
-    <span>Read Blog <br/> 我的博客</span>
-  </a>
-</div>
+{customSite.navEnable && (
+  <div class="hero-buttons">
+    {
+      customSite.navigations.map((nav, index) => {
+        if (index === 0) {
+          return (
+            <a href={`${base}${nav.path}`} class="btn btn-primary tiks-success tiks-hover">
+              <span set:html={nav.label}></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          );
+        } else {
+          return (
+            <a href={`${base}${nav.path}`} class="btn btn-secondary tiks-success tiks-hover">
+              <span set:html={nav.label}></span>
+            </a>
+          );
+        }
+      })
+    }
+  </div>
+)}
+
+
+{customSite.homeSiteEnable && (
+  <div class="hero-buttons">
+    {
+      commonSite.homeSiteLinks
+    .filter((homeSite) => homeSite.theme !== customSite.theme)
+    .map((homeSite, index) => {
+        if (index === 0) {
+          return (
+            <a href={homeSite.href} class="btn btn-primary tiks-success tiks-hover" target="_blank" rel="noopener noreferrer">
+              <span set:html={homeSite.title}></span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          );
+        } else {
+          return (
+            <a href={homeSite.href} class="btn btn-secondary tiks-success tiks-hover" target="_blank" rel="noopener noreferrer">
+              <span set:html={homeSite.title}></span>
+            </a>
+          );
+        }
+      })
+    }
+  </div>
+)}
+
 
 <style>
 
