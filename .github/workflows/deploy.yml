@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: SPS Publish
 
 on:
   push:
