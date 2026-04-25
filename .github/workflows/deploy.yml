@@ -35,14 +35,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: ${{ env.BUILD_PATH }}
           ref: 'publish'
+          path: ${{ env.BUILD_PATH }}
 
       - name: Checkout sps-digital-garden
         uses: actions/checkout@v4
         with:
           repository: SPSZerone/sps-digital-garden
-          ref: main
+          ref: 'main'
           path: ${{ env.SPS_DG_PATH }}
           token: ${{ secrets.SPS_DG_PUBLISH_PAT }}
 
