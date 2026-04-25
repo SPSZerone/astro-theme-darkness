@@ -7,6 +7,9 @@
 
   --sps-hero-description-color-text:                       #94A3B8; /* 000000 94A3B8 FFFFFF */
 
+  --sps-hero-btn-primary-text-color:                       #FFFFFF; /* FFFFFF FFFFFF */
+  --sps-hero-btn-secondary-text-color:                     #F1F5F9; /* 000000 F1F5F9 */
+
   --sps-hero-section-title-text-color:                     #FFFFFF; /* 000000 FFFFFF */
   --sps-hero-section-subtitle-text-color:                  #F1F5F9; /* 111111 F1F5F9 */
 
@@ -23,6 +26,9 @@ html.dark {
   --sps-hero-twe-text-highlight-color:                     #B026FF; /* 6A0DAD B026FF */
 
   --sps-hero-description-color-text:                       #94A3B8; /* 000000 94A3B8 FFFFFF */
+
+  --sps-hero-btn-primary-text-color:                       #FFFFFF; /* FFFFFF FFFFFF */
+  --sps-hero-btn-secondary-text-color:                     #F1F5F9; /* 000000 F1F5F9 */
 
   --sps-hero-section-title-text-color:                     #FFFFFF; /* 000000 FFFFFF */
   --sps-hero-section-subtitle-text-color:                  #F1F5F9; /* AAAAAA F1F5F9 */
