@@ -1,12 +1,10 @@
 name: SPS Publish
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - publish
-
-  workflow_dispatch:
-
   repository_dispatch:
     types:
       - sps_digital_garden_updated
@@ -52,6 +50,13 @@ jobs:
         uses: hustcer/setup-nu@v3
         with:
           nu-version: '0.112.2'
+
+      - name: Setup Golang
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: '${{ env.SPS_DG_PATH }}/go/go.mod'
+          # go-version: '1.26.x'
+          cache: true
 
       - name: "SPS Digital Garden -> scripts/publish.nu"
         run: nu ${{ env.SPS_DG_PATH }}/scripts/publish.nu -s astro -t ${{ env.THEME }} -p ${{ env.BUILD_PATH }}
