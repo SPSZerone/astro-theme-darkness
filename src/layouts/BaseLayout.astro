@@ -4,6 +4,7 @@ import '@spscustom/styles/sps.css';
 import '@spscommon/styles/sps.css';
 import '@spscommon/styles/skills.css';
 import Audio from '@spscommon/scripts/audio/Audio.astro';
+import Effect3DQNN from '@spscommon/components/effects/3DQuantumNeuralNetwork.astro'
 import Totoro from '@spscommon/components/widgets/Totoro.astro';
 import { ClientRouter } from 'astro:transitions';
 
@@ -115,6 +116,7 @@ const {
     </script>
 
     <Audio />
+    <Effect3DQNN lightRange={[0, 2]} darkRange={[0, 2]} formationRange={[1, 2]} />
     <Totoro />
 
   </body>
