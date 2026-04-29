@@ -30,8 +30,11 @@
     "@astrojs/mdx": "^4.0.0",
     "@astrojs/rss": "^4.0.0",
     "@astrojs/sitemap": "^3.2.0",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/mdi": "^1.2.3",
     "@rexa-developer/tiks": "^0.1.8",
     "astro": "^5.1.0",
+    "astro-icon": "^1.1.5",
     "three": "^0.160.0",
     "typewriter-effect": "^2.22.0"
   },
