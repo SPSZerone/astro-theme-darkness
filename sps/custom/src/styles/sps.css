@@ -16,6 +16,19 @@
   --sps-skill-category-bg-color:                           #1E293B; /* EEEEEE 1E293B */
   --sps-skill-category-title-color:                        #FFFFFF; /* 000000 FFFFFF */
   --sps-skill-tag-name-color:                              #F1F5F9; /* 111111 F1F5F9 */
+
+  --sps-blog-info-bg: #1e2532;
+  --sps-blog-info-border: rgba(255, 255, 255, 0.05);
+  --sps-blog-info-shadow: rgba(0, 0, 0, 0.2);
+
+  --sps-blog-info-title-color: #f8fafc;
+  --sps-blog-info-url-color: #7dd3fc;
+  --sps-blog-info-desc-color: #cbd5e1;
+
+  --sps-blog-info-label-color: #94a3b8;
+  --sps-blog-info-value-color: #e2e8f0;
+
+  --sps-blog-info-watermark-color: rgba(255, 255, 255, 0.03);
 }
 
 html.dark {
@@ -36,4 +49,17 @@ html.dark {
   --sps-skill-category-bg-color:                           #1E293B; /* EEEEEE 1E293B */
   --sps-skill-category-title-color:                        #FFFFFF; /* 000000 FFFFFF */
   --sps-skill-tag-name-color:                              #F1F5F9; /* 111111 F1F5F9 */
+
+  --sps-blog-info-bg: #1e2532;
+  --sps-blog-info-border: rgba(255, 255, 255, 0.05);
+  --sps-blog-info-shadow: rgba(0, 0, 0, 0.2);
+
+  --sps-blog-info-title-color: #f8fafc;
+  --sps-blog-info-url-color: #7dd3fc;
+  --sps-blog-info-desc-color: #cbd5e1;
+
+  --sps-blog-info-label-color: #94a3b8;
+  --sps-blog-info-value-color: #e2e8f0;
+
+  --sps-blog-info-watermark-color: rgba(255, 255, 255, 0.03);
 }
