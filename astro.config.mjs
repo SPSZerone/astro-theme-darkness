@@ -11,6 +11,9 @@ export default defineConfig({
   site: 'https://darkness.me.seapianosnow.com',
   base: '/',
   trailingSlash: isDev ? 'ignore' : 'always',
+  devToolbar: {
+    enabled: false
+  },
   integrations: [mdx(), sitemap(), icon()],
   vite: {
     resolve: {
